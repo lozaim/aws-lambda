@@ -8,9 +8,7 @@ import boto3
 sns= boto3.client('sns')
 http = urllib3.PoolManager()
 
-urls = ['https://oauth2-qa.vpc.getqardio.com/status',
-        'https://qa-us-ecommerce.vpc.getqardio.com/status',
-        'https://api-eu.getqardio.com/status',
+urls = [
         'https://google.com'
 ]
 topic_arn='arn:aws:sns:us-east-1:041027301676:DevOps-Email'
